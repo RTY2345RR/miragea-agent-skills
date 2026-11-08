@@ -12,8 +12,11 @@ Agent:  (uses the miragea-voiceover skill)
         → ~/Miragea/my-short.mp3  ~/Miragea/my-short.srt  ~/Miragea/my-short.vtt
 ```
 
+![Terminal screenshot: cloning miragea-agent-skills from GitHub and installing the miragea-voiceover Agent Skill into ~/.claude/skills for Claude Code](docs/images/claude-code-voiceover-agent-skill-install-terminal.svg)
+
 ## Contents
 
+- [How it works](#how-it-works)
 - [Skills in this repo](#skills-in-this-repo)
 - [Requirements](#requirements)
 - [Install: Claude Code](#claude-code)
@@ -24,6 +27,12 @@ Agent:  (uses the miragea-voiceover skill)
 - [Example prompts](#example-prompts)
 - [FAQ](#faq)
 - [Related](#related)
+
+## How it works
+
+![Workflow diagram of the voiceover Agent Skill: the agent loads SKILL.md, gathers the brief, checks capabilities, prepares the script, confirms long jobs, then calls the miragea-voice-mcp tools (Miragea voice engine) to produce an MP3 voiceover with SRT and VTT captions](docs/images/voiceover-agent-skill-workflow-diagram.svg)
+
+An Agent Skill is a playbook your agent loads only when a request matches it. When you ask for a voiceover or subtitles, the agent reads [`SKILL.md`](skills/miragea-voiceover/SKILL.md), follows its five steps, and calls the [miragea-voice-mcp](https://github.com/RTY2345RR/miragea-voice-mcp) tools, which use the [Miragea](https://miragea.ai) voice engine for text-to-speech, voice cloning and speech recognition. The result is a voiceover audio file plus SRT and WebVTT captions in your output folder.
 
 ## Skills in this repo
 

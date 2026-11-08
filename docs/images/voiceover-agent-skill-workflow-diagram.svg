@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="t d">
+  <title id="t">Voiceover Agent Skill workflow for Claude Code, Codex and Cursor</title>
+  <desc id="d">A user asks an AI coding agent for a voiceover. The agent loads the miragea-voiceover SKILL.md, gathers the brief, checks live capabilities, prepares the script for speech, confirms long jobs, then calls the miragea-voice-mcp server, which uses the Miragea voice engine and returns an MP3 voiceover with SRT and WebVTT captions.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <style>
+    text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;fill:#0f172a}
+    .h{font-size:19px;font-weight:700}
+    .s{font-size:14px;fill:#334155}
+    .n{font-size:15px;font-weight:700;fill:#ffffff}
+    .m{font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#1e293b}
+    .ln{stroke:#64748b;stroke-width:2.2;fill:none;marker-end:url(#a)}
+  </style>
+  <rect width="1200" height="470" fill="#f8fafc"/>
+  <text x="600" y="40" text-anchor="middle" class="h" style="font-size:24px">How the voiceover Agent Skill works</text>
+
+  <rect x="30" y="80" width="230" height="140" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="145" y="115" text-anchor="middle" class="h">You ask</text>
+  <text x="145" y="148" text-anchor="middle" class="s">"Voiceover + captions</text>
+  <text x="145" y="168" text-anchor="middle" class="s">for this Short"</text>
+  <text x="145" y="200" text-anchor="middle" class="m">Claude Code · Codex · Cursor</text>
+
+  <path d="M260 150 L320 150" class="ln"/>
+
+  <rect x="325" y="70" width="560" height="250" rx="14" fill="#eef2ff" stroke="#6366f1" stroke-width="2.5"/>
+  <text x="605" y="102" text-anchor="middle" class="h">Agent loads skills/miragea-voiceover/SKILL.md</text>
+  <g>
+    <circle cx="360" cy="140" r="14" fill="#6366f1"/><text x="360" y="145" text-anchor="middle" class="n">1</text>
+    <text x="385" y="145" class="s">Gather the brief: script, voice or reference clip, platform, tone</text>
+    <circle cx="360" cy="175" r="14" fill="#6366f1"/><text x="360" y="180" text-anchor="middle" class="n">2</text>
+    <text x="385" y="180" class="s">Check live capabilities: models, emotion tags, formats, limits</text>
+    <circle cx="360" cy="210" r="14" fill="#6366f1"/><text x="360" y="215" text-anchor="middle" class="n">3</text>
+    <text x="385" y="215" class="s">Prepare the script for speech (numbers, URLs, long sentences)</text>
+    <circle cx="360" cy="245" r="14" fill="#6366f1"/><text x="360" y="250" text-anchor="middle" class="n">4</text>
+    <text x="385" y="250" class="s">Confirm long jobs, pick caption length per platform</text>
+    <circle cx="360" cy="280" r="14" fill="#6366f1"/><text x="360" y="285" text-anchor="middle" class="n">5</text>
+    <text x="385" y="285" class="s">Generate, recover by task ID (no duplicate jobs), deliver</text>
+  </g>
+
+  <path d="M885 195 L945 195" class="ln"/>
+
+  <rect x="950" y="80" width="220" height="230" rx="14" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text x="1060" y="115" text-anchor="middle" class="h">MCP tools</text>
+  <text x="1060" y="140" text-anchor="middle" class="m">miragea-voice-mcp</text>
+  <text x="1060" y="180" text-anchor="middle" class="s">Voice engine:</text>
+  <text x="1060" y="202" text-anchor="middle" class="h" style="font-size:17px">Miragea</text>
+  <text x="1060" y="236" text-anchor="middle" class="s">TTS · voice cloning</text>
+  <text x="1060" y="258" text-anchor="middle" class="s">speech recognition</text>
+
+  <path d="M1060 310 L1060 345 L605 345 L605 365" class="ln"/>
+
+  <rect x="255" y="370" width="700" height="80" rx="14" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="605" y="402" text-anchor="middle" class="h">voiceover.mp3 + captions.srt + captions.vtt</text>
+  <text x="605" y="430" text-anchor="middle" class="s">Ready for CapCut, Premiere Pro, DaVinci Resolve, YouTube Shorts, TikTok and Reels</text>
+</svg>
