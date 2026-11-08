@@ -1,0 +1,21 @@
+{
+  "name": "miragea-agent-skills",
+  "owner": {
+    "name": "RTY2345RR"
+  },
+  "metadata": {
+    "description": "Agent Skills for AI voiceover and captions: script to narration audio plus SRT/VTT subtitles for videos, Shorts, TikTok and Reels.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "voiceover-skills",
+      "description": "Script-to-voiceover workflow with matching SRT/VTT captions (Miragea voice engine via the miragea-voice-mcp server).",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/miragea-voiceover"
+      ]
+    }
+  ]
+}
