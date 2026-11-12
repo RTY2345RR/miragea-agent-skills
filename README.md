@@ -165,6 +165,17 @@ Yes, from a public reference audio URL. Giving the exact words spoken in the cli
 ### Is my API key safe?
 The key lives only in your MCP config `env` block. The skill never asks you to paste it into chat and never prints it.
 
+## YouTube dubbing skill
+
+**`youtube-dubbing`**: dub a YouTube video into another language with each speaker's cloned voice, synced captions and an upload package. Drives [youtube-dubbing-mcp](https://github.com/RTY2345RR/youtube-dubbing-mcp). Real two-speaker output (male + female) lives in [`skills/youtube-dubbing/examples`](skills/youtube-dubbing/examples).
+
+![Workflow diagram of the youtube-dubbing Agent Skill: video, transcript, speakers, voice cloning, translation, dub track and YouTube package](docs/images/youtube-dubbing-agent-skill-workflow-diagram.png)
+
+![Two-speaker AI dubbing demo with captions](docs/images/youtube-dubbing-agent-skill-two-speaker-demo.png)
+
+Copy it: `git clone https://github.com/RTY2345RR/miragea-agent-skills && cp -r miragea-agent-skills/skills/youtube-dubbing ~/.claude/skills/`
+
+
 ## Related
 
 - **MCP server:** [RTY2345RR/miragea-voice-mcp](https://github.com/RTY2345RR/miragea-voice-mcp) — the voiceover & captions tools this skill uses.
