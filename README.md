@@ -39,6 +39,7 @@ An Agent Skill is a playbook your agent loads only when a request matches it. Wh
 | Skill | Use it for | Works in |
 | --- | --- | --- |
 | [`miragea-voiceover`](skills/miragea-voiceover/SKILL.md) | Script → voiceover audio + SRT/VTT captions; subtitles for existing audio or video; voice cloning from a reference clip | Claude Code, Claude.ai, Codex, Cursor, any agent that reads `SKILL.md` |
+| [`youtube-shorts-voiceover`](skills/youtube-shorts-voiceover/SKILL.md) | YouTube Shorts voiceover with captions, two-voice dialogue, SRT dubbing, mux onto vertical video | Claude Code, Codex, Cursor |
 
 More video-creator skills (talking-head, movie recap, product video, Shorts) will be added here.
 
