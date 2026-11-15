@@ -1,5 +1,14 @@
 .DS_Store
+__pycache__/
+*.pyc
 *.mp3
 *.wav
 *.srt
 *.vtt
+# Real demo output shipped with each skill
+!skills/*/examples/
+!skills/*/examples/*.mp3
+!skills/*/examples/*.wav
+!skills/*/examples/*.srt
+!skills/*/examples/*.vtt
+!skills/*/examples/*.json

@@ -1,0 +1,23 @@
+{
+  "title": "Notes to Podcast in One Command",
+  "hosts": [
+    "Maya",
+    "Leo"
+  ],
+  "segments": [
+    {
+      "speaker": "Maya",
+      "chapter": "Why turn notes into a podcast",
+      "text": "Today we turned a page of research notes into a podcast episode with two cloned host voices.",
+      "start": 0.2,
+      "end": 6.1
+    },
+    {
+      "speaker": "Leo",
+      "chapter": "What you get",
+      "text": "Every chapter, caption and timestamp came out of one command, ready to publish.",
+      "start": 7.0,
+      "end": 12.52
+    }
+  ]
+}

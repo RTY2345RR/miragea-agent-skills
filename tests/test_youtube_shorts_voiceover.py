@@ -103,7 +103,7 @@ class ShortsVoiceoverTest(unittest.TestCase):
         self.assertTrue(p[0][2]["Idempotency-Key"].startswith("svo-"))
         for line in (out / "captions.srt").read_text().splitlines():
             if line and not line[0].isdigit():
-                self.assertLessEqual(len(line), 24, line)
+                self.assertLessEqual(len(line), 32, line)
         self.assertIn("{\\k", (out / "captions.ass").read_text())
         with wave.open(str(out / "voiceover.wav")) as w:
             self.assertAlmostEqual(w.getnframes() / w.getframerate(), rep["duration_s"], delta=0.02)
@@ -154,3 +154,19 @@ class ShortsVoiceoverTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class CaptionSplitTest(unittest.TestCase):
+    def test_no_one_word_orphans_and_balanced(self):
+        lines = [{"text": "Octopuses have three hearts.", "start_ms": 0, "end_ms": 2043},
+                 {"text": "Two pump blood to the gills, and one keeps the body running.", "start_ms": 2223, "end_ms": 6589}]
+        for mc in (24, 28, 32):
+            cues = svo.short_cues(lines, mc)
+            for c in cues:
+                self.assertGreaterEqual(len(c["text"].split()), 2, (mc, c["text"]))
+                self.assertLessEqual(len(c["text"]), mc)
+            self.assertNotIn("hearts.", [c["text"] for c in cues])
+
+    def test_prefers_punctuation_break(self):
+        cues = svo.short_cues([{"text": "Two pump blood to the gills, and one keeps the body running.", "start_ms": 0, "end_ms": 4000}], 32)
+        self.assertEqual([c["text"] for c in cues], ["Two pump blood to the gills,", "and one keeps the body running."])

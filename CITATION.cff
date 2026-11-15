@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use these skills, please cite them as below."
+title: "miragea-agent-skills: Claude Code skills for AI voiceover, Remotion, podcasts and YouTube dubbing"
+abstract: "An open-source collection of Claude Code skills (SKILL.md) that create voiceovers with SRT/VTT captions, Remotion narration with @remotion/captions, two-host AI podcasts, YouTube Shorts voiceovers and multi-speaker YouTube dubbing in Claude Code, Codex and Cursor."
+type: software
+authors:
+  - name: "RTY2345RR"
+repository-code: "https://github.com/RTY2345RR/miragea-agent-skills"
+url: "https://github.com/RTY2345RR/miragea-agent-skills"
+license: MIT
+version: "0.2.0"
+date-released: "2026-11-15"
+keywords:
+  - claude-code-skills
+  - agent-skills
+  - remotion
+  - remotion-voiceover
+  - ai-podcast-generator
+  - notebooklm-alternative
+  - ai-voiceover
+  - voice-cloning
+  - youtube-dubbing
+  - youtube-shorts
+  - srt-subtitles

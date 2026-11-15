@@ -1,10 +1,11 @@
 ---
 name: miragea-voiceover
-description: Turn a video script into a finished voiceover audio file plus SRT/VTT captions using the voiceover & captions MCP tools (Miragea voice engine). Use when the user asks for a voiceover, narration, AI voice, dubbing a script, reading text aloud to a file, or captions/subtitles for a YouTube video, Short, TikTok, Reel, product video, ad, explainer, course lesson or movie recap.
+description: "AI voiceover skill for Claude Code, Codex and Cursor: turn a video script into a finished voiceover audio file (MP3/WAV) plus SRT and WebVTT captions, with voice cloning from a reference clip and emotion tags, through the miragea-voice-mcp MCP server. Use when the user asks for an AI voiceover, narration, text to speech to a file, a cloned voice reading a script, or captions/subtitles for a YouTube video, Short, TikTok, Reel, faceless YouTube channel, product video, ad, explainer, course lesson or movie recap."
 license: MIT
 metadata:
   version: "0.1.0"
   requires: "miragea-voice-mcp MCP server (uvx --from git+https://github.com/RTY2345RR/miragea-voice-mcp miragea-voice-mcp) and a MIRAGEA_API_KEY"
+  keywords: "ai voiceover skill, claude code voiceover, text to speech skill, srt subtitles, voice cloning"
 ---
 
 # Voiceover: script → audio + captions

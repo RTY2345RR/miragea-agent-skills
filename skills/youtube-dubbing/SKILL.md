@@ -1,10 +1,11 @@
 ---
 name: youtube-dubbing
-description: Dub a YouTube video or local video into another language, keeping each speaker's own voice, with synced captions and a ready-to-upload package. Use when the user asks to dub a YouTube video, translate a video's audio, make a multi-language audio track, AI dub an interview or podcast, or clone the speakers' voices in another language.
+description: "YouTube dubbing skill for Claude Code, Codex and Cursor: dub a YouTube or local video into another language while each speaker keeps a cloned version of their own voice, with synced SRT captions and a ready-to-upload multi-language audio package, through the youtube-dubbing-mcp MCP server. Use when the user asks to dub a YouTube video, AI dub an interview or podcast, translate a video's audio, add a multi-language audio track, or clone speakers' voices in another language."
 license: MIT
 metadata:
   version: "0.1.0"
   requires: "youtube-dubbing-mcp MCP server (uvx --from git+https://github.com/RTY2345RR/youtube-dubbing-mcp youtube-dubbing-mcp) and a MIRAGEA_API_KEY"
+  keywords: "youtube dubbing, ai video dubbing, claude code youtube skill, multi-language audio, voice cloning"
 ---
 
 # YouTube video dubbing with per-speaker voice cloning

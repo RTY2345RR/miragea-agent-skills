@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "fps": 30,
+  "durationMs": 10760,
+  "durationInFrames": 323,
+  "audio": "voiceover/voiceover.wav",
+  "captions": "voiceover/captions.json",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "Hook",
+      "startMs": 0,
+      "endMs": 4876,
+      "startFrame": 0,
+      "durationInFrames": 146,
+      "lines": [
+        {
+          "id": "hook-01",
+          "scene": "hook",
+          "text": "Your Remotion video finally has a real voiceover, with captions on every frame.",
+          "spoken": "Your Remotion video finally has a real voiceover, with captions on every frame.",
+          "src": "voiceover/hook-01.wav",
+          "startMs": 0,
+          "endMs": 4876,
+          "startFrame": 0,
+          "durationInFrames": 146
+        }
+      ]
+    },
+    {
+      "id": "outro",
+      "title": "Outro",
+      "startMs": 5476,
+      "endMs": 10260,
+      "startFrame": 164,
+      "durationInFrames": 144,
+      "lines": [
+        {
+          "id": "outro-01",
+          "scene": "outro",
+          "text": "Write the script once, render the video, and the narration stays in sync.",
+          "spoken": "Write the script once, render the video, and the narration stays in sync.",
+          "src": "voiceover/outro-01.wav",
+          "startMs": 5476,
+          "endMs": 10260,
+          "startFrame": 164,
+          "durationInFrames": 144
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "hook-01",
+      "scene": "hook",
+      "text": "Your Remotion video finally has a real voiceover, with captions on every frame.",
+      "spoken": "Your Remotion video finally has a real voiceover, with captions on every frame.",
+      "src": "voiceover/hook-01.wav",
+      "startMs": 0,
+      "endMs": 4876,
+      "startFrame": 0,
+      "durationInFrames": 146
+    },
+    {
+      "id": "outro-01",
+      "scene": "outro",
+      "text": "Write the script once, render the video, and the narration stays in sync.",
+      "spoken": "Write the script once, render the video, and the narration stays in sync.",
+      "src": "voiceover/outro-01.wav",
+      "startMs": 5476,
+      "endMs": 10260,
+      "startFrame": 164,
+      "durationInFrames": 144
+    }
+  ]
+}

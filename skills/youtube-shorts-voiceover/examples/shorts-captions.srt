@@ -1,0 +1,11 @@
+1
+00:00:00,000 --> 00:00:02,043
+Octopuses have three hearts.
+
+2
+00:00:02,223 --> 00:00:04,082
+Two pump blood to the gills,
+
+3
+00:00:04,082 --> 00:00:06,589
+and one keeps the body running.

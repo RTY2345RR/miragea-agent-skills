@@ -1,0 +1,184 @@
+[
+  {
+    "text": "Your",
+    "startMs": 0,
+    "endMs": 190,
+    "timestampMs": 95,
+    "confidence": null
+  },
+  {
+    "text": " Remotion",
+    "startMs": 190,
+    "endMs": 761,
+    "timestampMs": 476,
+    "confidence": null
+  },
+  {
+    "text": " video",
+    "startMs": 761,
+    "endMs": 1141,
+    "timestampMs": 951,
+    "confidence": null
+  },
+  {
+    "text": " finally",
+    "startMs": 1141,
+    "endMs": 1712,
+    "timestampMs": 1427,
+    "confidence": null
+  },
+  {
+    "text": " has",
+    "startMs": 1712,
+    "endMs": 1902,
+    "timestampMs": 1807,
+    "confidence": null
+  },
+  {
+    "text": " a",
+    "startMs": 1902,
+    "endMs": 2092,
+    "timestampMs": 1997,
+    "confidence": null
+  },
+  {
+    "text": " real",
+    "startMs": 2092,
+    "endMs": 2282,
+    "timestampMs": 2187,
+    "confidence": null
+  },
+  {
+    "text": " voiceover,",
+    "startMs": 2282,
+    "endMs": 2967,
+    "timestampMs": 2625,
+    "confidence": null
+  },
+  {
+    "text": " with",
+    "startMs": 2967,
+    "endMs": 3157,
+    "timestampMs": 3062,
+    "confidence": null
+  },
+  {
+    "text": " captions",
+    "startMs": 3157,
+    "endMs": 3538,
+    "timestampMs": 3348,
+    "confidence": null
+  },
+  {
+    "text": " on",
+    "startMs": 3538,
+    "endMs": 3728,
+    "timestampMs": 3633,
+    "confidence": null
+  },
+  {
+    "text": " every",
+    "startMs": 3728,
+    "endMs": 4299,
+    "timestampMs": 4013,
+    "confidence": null
+  },
+  {
+    "text": " frame.",
+    "startMs": 4299,
+    "endMs": 4660,
+    "timestampMs": 4479,
+    "confidence": null
+  },
+  {
+    "text": "Write",
+    "startMs": 5476,
+    "endMs": 5714,
+    "timestampMs": 5595,
+    "confidence": null
+  },
+  {
+    "text": " the",
+    "startMs": 5714,
+    "endMs": 5952,
+    "timestampMs": 5833,
+    "confidence": null
+  },
+  {
+    "text": " script",
+    "startMs": 5952,
+    "endMs": 6189,
+    "timestampMs": 6070,
+    "confidence": null
+  },
+  {
+    "text": " once,",
+    "startMs": 6189,
+    "endMs": 6570,
+    "timestampMs": 6379,
+    "confidence": null
+  },
+  {
+    "text": " render",
+    "startMs": 6570,
+    "endMs": 7045,
+    "timestampMs": 6807,
+    "confidence": null
+  },
+  {
+    "text": " the",
+    "startMs": 7045,
+    "endMs": 7283,
+    "timestampMs": 7164,
+    "confidence": null
+  },
+  {
+    "text": " video,",
+    "startMs": 7283,
+    "endMs": 7901,
+    "timestampMs": 7592,
+    "confidence": null
+  },
+  {
+    "text": " and",
+    "startMs": 7901,
+    "endMs": 8138,
+    "timestampMs": 8020,
+    "confidence": null
+  },
+  {
+    "text": " the",
+    "startMs": 8138,
+    "endMs": 8376,
+    "timestampMs": 8257,
+    "confidence": null
+  },
+  {
+    "text": " narration",
+    "startMs": 8376,
+    "endMs": 9089,
+    "timestampMs": 8733,
+    "confidence": null
+  },
+  {
+    "text": " stays",
+    "startMs": 9089,
+    "endMs": 9327,
+    "timestampMs": 9208,
+    "confidence": null
+  },
+  {
+    "text": " in",
+    "startMs": 9327,
+    "endMs": 9565,
+    "timestampMs": 9446,
+    "confidence": null
+  },
+  {
+    "text": " sync.",
+    "startMs": 9565,
+    "endMs": 10016,
+    "timestampMs": 9790,
+    "confidence": null
+  }
+]

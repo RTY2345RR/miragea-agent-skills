@@ -1,0 +1,19 @@
+1
+00:00:00,200 --> 00:00:02,207
+[Maya] Today we turned a page of research
+
+2
+00:00:02,207 --> 00:00:04,214
+[Maya] notes into a podcast episode
+
+3
+00:00:04,214 --> 00:00:05,800
+[Maya] with two cloned host voices.
+
+4
+00:00:06,998 --> 00:00:09,727
+[Leo] Every chapter, caption and timestamp came
+
+5
+00:00:09,727 --> 00:00:12,218
+[Leo] out of one command, ready to publish.

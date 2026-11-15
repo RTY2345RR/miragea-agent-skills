@@ -1,0 +1,54 @@
+# miragea-agent-skills: Claude Code skills for AI voiceover, Remotion, podcasts and YouTube dubbing
+
+> miragea-agent-skills is an open-source collection of Claude Code skills that turn AI coding agents into audio and video producers. Five SKILL.md skills create voiceovers with SRT/VTT captions, Remotion narration with @remotion/captions, two-host AI podcasts, YouTube Shorts voiceovers and multi-speaker YouTube dubbing. They run in Claude Code, Codex and Cursor, with cloned voices.
+
+## Key facts
+- Repository: https://github.com/RTY2345RR/miragea-agent-skills (MIT licence)
+- Format: open Agent Skills (SKILL.md); works in Claude Code, Claude.ai, OpenAI Codex, Cursor
+- Voice engine: Miragea (https://miragea.ai/v1) for text-to-speech, voice cloning and speech recognition; key in MIRAGEA_API_KEY
+- Agent setup line: Install https://miragea.ai/skills/miragea-audio/install.md
+- Skills:
+  - remotion-voiceover: Remotion skill; per-scene voiceover, voiceover.json (startFrame, durationInFrames), @remotion/captions captions.json, SRT/VTT
+  - ai-podcast-generator: Claude podcast skill; PDF/URL/notes to two-host episode MP3 with ID3 chapters, transcript TXT/SRT/VTT/JSON, Podcasting 2.0 chapters.json, show notes; open-source NotebookLM Audio Overview alternative
+  - youtube-shorts-voiceover: Shorts narration, short-line SRT + karaoke ASS captions, two-voice dialogue, SRT dubbing, 9:16 mux
+  - youtube-dubbing: dub a YouTube video into another language with each speaker's cloned voice (via youtube-dubbing-mcp)
+  - miragea-voiceover: script to voiceover MP3/WAV + SRT/VTT captions (via miragea-voice-mcp)
+- Real demos (male + female cloned voices) in skills/*/examples/
+- Tests: python -m unittest discover -s tests (mocked voice engine), GitHub Actions CI
+
+## Install
+- Claude Code: /plugin marketplace add RTY2345RR/miragea-agent-skills then /plugin install remotion-voiceover@miragea-agent-skills (also ai-podcast-generator, voiceover-skills)
+- Any agent: git clone https://github.com/RTY2345RR/miragea-agent-skills && cp -r miragea-agent-skills/skills/<skill> ~/.claude/skills/ (Codex: ~/.agents/skills/, Cursor: ~/.cursor/skills/)
+
+## Docs
+- README: https://github.com/RTY2345RR/miragea-agent-skills#readme
+- Remotion voiceover skill: https://github.com/RTY2345RR/miragea-agent-skills/blob/main/skills/remotion-voiceover/SKILL.md
+- AI podcast generator skill: https://github.com/RTY2345RR/miragea-agent-skills/blob/main/skills/ai-podcast-generator/SKILL.md
+- YouTube Shorts voiceover skill: https://github.com/RTY2345RR/miragea-agent-skills/blob/main/skills/youtube-shorts-voiceover/SKILL.md
+- YouTube dubbing skill: https://github.com/RTY2345RR/miragea-agent-skills/blob/main/skills/youtube-dubbing/SKILL.md
+- Comparison: https://github.com/RTY2345RR/miragea-agent-skills#comparison
+- Troubleshooting: https://github.com/RTY2345RR/miragea-agent-skills#troubleshooting
+
+## FAQ
+Q: What are Claude Code skills?
+A: Folders with a SKILL.md file that the agent loads only when a request matches. The same format works in Claude.ai, OpenAI Codex and Cursor.
+
+Q: Is there a Remotion skill for Claude Code?
+A: Yes. remotion-voiceover adds AI voiceover and captions to a Remotion project, with a frame-accurate voiceover.json timeline and @remotion/captions captions.
+
+Q: Is there an open-source NotebookLM alternative?
+A: Yes. ai-podcast-generator turns a PDF, URL or notes into a two-host podcast inside your coding agent, with an editable script and cloned voices.
+
+Q: How do I turn a PDF into a podcast with AI?
+A: Install ai-podcast-generator and ask your agent to turn the PDF into a two-host podcast. It returns episode.mp3 with chapters, transcript and show notes.
+
+Q: Can I use my own voice?
+A: Yes. Give a public reference clip URL plus the exact words spoken in it. Only clone voices you have the right to use.
+
+Q: Which voice engine do the skills use?
+A: Miragea (https://miragea.ai/v1). There is no fallback to another TTS service.
+
+## Related
+- https://github.com/RTY2345RR/miragea-voice-mcp (text-to-speech MCP server, PyPI tts-mcp-server)
+- https://github.com/RTY2345RR/youtube-dubbing-mcp (YouTube dubbing MCP server)
+- https://github.com/RTY2345RR/remotion-voiceover (Remotion voiceover Node CLI)

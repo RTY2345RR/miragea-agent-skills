@@ -4,8 +4,8 @@
     "name": "RTY2345RR"
   },
   "metadata": {
-    "description": "Agent Skills for AI voiceover and captions: script to narration audio plus SRT/VTT subtitles for videos, Shorts, TikTok and Reels.",
-    "version": "0.1.0"
+    "description": "Claude Code skills for AI voiceover, captions, Remotion narration, YouTube dubbing, YouTube Shorts and two-host AI podcasts.",
+    "version": "0.2.0"
   },
   "plugins": [
     {
@@ -15,6 +15,24 @@
       "strict": false,
       "skills": [
         "./skills/miragea-voiceover"
+      ]
+    },
+    {
+      "name": "remotion-voiceover",
+      "description": "Remotion skill: AI voiceover, voice cloning and @remotion/captions captions.json + SRT/VTT, synced to Remotion scenes (startFrame, durationInFrames).",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/remotion-voiceover"
+      ]
+    },
+    {
+      "name": "ai-podcast-generator",
+      "description": "Claude podcast skill: turn a PDF, URL or notes into a two-host AI podcast episode MP3 with chapters, transcript and show notes. Open-source NotebookLM Audio Overview alternative.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/ai-podcast-generator"
       ]
     }
   ]

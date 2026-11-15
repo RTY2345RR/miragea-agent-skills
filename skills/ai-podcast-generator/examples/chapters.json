@@ -1,0 +1,16 @@
+{
+  "version": "1.2.0",
+  "title": "Notes to Podcast in One Command",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "endTime": 7.0,
+      "title": "Why turn notes into a podcast"
+    },
+    {
+      "startTime": 7.0,
+      "endTime": 13.32,
+      "title": "What you get"
+    }
+  ]
+}

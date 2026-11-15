@@ -1,0 +1,7 @@
+# Notes to Podcast in One Command
+
+## Why turn notes into a podcast
+Maya: Today we turned a page of research notes into a podcast episode with two cloned host voices.
+
+## What you get
+Leo: Every chapter, caption and timestamp came out of one command, ready to publish.

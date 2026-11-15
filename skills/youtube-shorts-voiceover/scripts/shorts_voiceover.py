@@ -180,19 +180,48 @@ def stamp(ms: float, sep=",") -> str:
     return f"{ms // 3600000:02d}:{ms % 3600000 // 60000:02d}:{ms % 60000 // 1000:02d}{sep}{ms % 1000:03d}"
 
 
+def balanced_groups(items, max_chars, length=lambda ws: len(" ".join(w[0] for w in ws)), min_chars=10):
+    """Split words into the fewest caption cues of similar length.
+
+    Never leaves a one-word orphan such as "hearts." alone when a better split exists,
+    prefers breaks after punctuation, and keeps every cue within max_chars when possible.
+    """
+    n = len(items)
+    if n == 0:
+        return []
+    INF = float("inf")
+    best = [0.0] + [INF] * n
+    back = [0] * (n + 1)
+    for i in range(1, n + 1):
+        for j in range(i - 1, -1, -1):
+            chunk = items[j:i]
+            L = length(chunk)
+            if L > max_chars and i - j > 1:
+                break
+            cost = 1000 + (max_chars - min(L, max_chars)) ** 2
+            if n > 1 and (i - j == 1 or L < min_chars):
+                cost += 600  # orphan / tiny cue
+            if i < n and re.search(r"[.!?]$", chunk[-1][0]):
+                cost -= 250  # sentence end: best place to break
+            elif i < n and re.search(r"[,;:\u2014-]$", chunk[-1][0]):
+                cost -= 120
+            if best[j] + cost < best[i]:
+                best[i], back[i] = best[j] + cost, j
+    groups, i = [], n
+    while i > 0:
+        groups.append(items[back[i]:i])
+        i = back[i]
+    return groups[::-1]
+
+
 def short_cues(lines, max_chars=24):
-    """Split each voiced line into short vertical-video cues using word timing."""
+    """Split each voiced line into short, evenly sized vertical-video cues using word timing."""
     cues = []
     for ln in lines:
-        cur = []
-        for w in word_times(ln["text"], ln["start_ms"], ln["end_ms"]):
-            if cur and len(" ".join(x[0] for x in cur)) + 1 + len(w[0]) > max_chars:
-                cues.append(cur)
-                cur = []
-            cur.append(w)
-        if cur:
-            cues.append(cur)
-    return [{"text": " ".join(w[0] for w in c), "start_ms": c[0][1], "end_ms": c[-1][2], "words": c} for c in cues]
+        words = word_times(ln["text"], ln["start_ms"], ln["end_ms"])
+        for c in balanced_groups(words, max_chars):
+            cues.append({"text": " ".join(w[0] for w in c), "start_ms": c[0][1], "end_ms": c[-1][2], "words": c})
+    return cues
 
 
 def srt(cues) -> str:
@@ -443,7 +472,7 @@ def build_parser():
     voice_opts(v)
     v.add_argument("--gap", type=float, default=180, help="ms between lines")
     v.add_argument("--lead-in", type=float, default=0)
-    v.add_argument("--max-chars", type=int, default=24)
+    v.add_argument("--max-chars", type=int, default=32, help="max characters per caption cue (24-32 for Shorts)")
     v.add_argument("--max-seconds", type=float, default=60)
 
     d = sub.add_parser("dub")

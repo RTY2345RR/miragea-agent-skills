@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:01,712
+Your Remotion video finally
+
+2
+00:00:01,712 --> 00:00:02,967
+has a real voiceover,
+
+3
+00:00:02,967 --> 00:00:04,660
+with captions on every frame.
+
+4
+00:00:05,476 --> 00:00:06,570
+Write the script once,
+
+5
+00:00:06,570 --> 00:00:07,901
+render the video,
+
+6
+00:00:07,901 --> 00:00:10,016
+and the narration stays in sync.

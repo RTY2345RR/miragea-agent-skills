@@ -1,10 +1,11 @@
 ---
 name: youtube-shorts-voiceover
-description: Make a YouTube Shorts voiceover with burned-in-ready captions, or dub a translated SRT into slot-fitted audio, and put it on a vertical video. Use when the user asks for a Shorts voiceover, AI narration for a vertical video, TikTok or Reels captions with voice, a two-voice Shorts dialogue, or to dub a Short into English.
+description: "YouTube Shorts AI voiceover skill: turn a Shorts script into a narrator voiceover with big Shorts-style captions (SRT + karaoke ASS), voice one or two speakers with cloned voices, dub a translated SRT into slot-fitted audio, and mux it onto a vertical 9:16 video with ffmpeg. Use when the user asks for a YouTube Shorts voiceover or narrator voice, AI narration for a vertical video, TikTok or Reels captions with voice, a two-voice Shorts dialogue, or to dub a Short into English."
 license: MIT
 metadata:
   version: "0.1.0"
   requires: "python 3.9+, ffmpeg (only for mux), MIRAGEA_API_KEY"
+  keywords: "youtube shorts ai voiceover, youtube shorts narrator voice, tiktok voiceover, reels captions"
 ---
 
 # YouTube Shorts voiceover, captions and dubbing
